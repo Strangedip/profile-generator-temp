@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
+  showView: boolean = true;
+  showCreate: boolean = false;
+  
+  switchTab() {
+  }
 }

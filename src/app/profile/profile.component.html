@@ -1,12 +1,16 @@
-<div class="profile-box">
-    <div class="name">
-        <h1>Name</h1>
-    </div>
-    <div class="skills">
-        <ul>
-            <li *ngFor="let skill of skills">
-                {{skill}}
-            </li>
-        </ul>
+<div class="profile-section">
+    <div class="profile-box">
+        <div class="profiles" *ngFor="let profile of profiles">
+            <div class="name">
+                <h1>{{profile.name}}</h1>
+            </div>
+            <div class="skills">
+                <ul>
+                    <li *ngFor="let skill of profile.skills">
+                        {{skill}}
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>

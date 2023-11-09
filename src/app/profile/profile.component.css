@@ -1,19 +1,31 @@
+
 .profile-box {
-    width: 20rem;
-    height: 15rem;
-    padding: 1em;
-    background-color: rebeccapurple;
-    margin: 5px;
+    padding: 2rem;
+    background-color: #e0eefd;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    justify-content: stretch;
+    align-items: stretch;
+    gap: 1rem;
+    grid-auto-flow: row;
 }
 
+.profiles{
+    background-color: #fff;
+    width: 80%;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
 .name {
     text-align: center;
-    width: 100%;
-    padding: 5px 5px 10px 5px;
-    background-color: red;
+    padding: 0.2rem 1rem;
+    color:#007bff;
 }
 
 .skills>ul>li {
     list-style: none;
-    padding: 10px 10px 0px 10px;
+    padding: 10px ;
 }
