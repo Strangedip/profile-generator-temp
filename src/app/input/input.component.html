@@ -1,0 +1,25 @@
+<div class="profile-input">
+    <h2>Create new profile</h2>
+    <form>
+        <div class="input-name">
+            <input type="text" placeholder="Enter Your Name">
+        </div>
+        <div class="input-skills">
+            <div class="skill">
+                <input type="checkbox" name="skills" id="python">
+                <label for="python">Python</label>
+            </div>
+            <div class="skill">
+                <input type="checkbox" name="skills" id="java">
+                <label for="java">Java</label>
+            </div>
+            <div class="skill">
+                <input type="checkbox" name="skills" id="javascript">
+                <label for="javascript">Javascript</label>
+            </div>
+        </div>
+        <div class="submit-btn">
+            <input type="button" (click)="createProfile()" value="Create">
+        </div>
+    </form>
+</div>
