@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,10 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'portfolio';
-  showView: boolean = true;
-  showCreate: boolean = false;
-  
-  switchTab() {
-  }
+  title = 'projectA';
+  showView: boolean = false;
+  showCreate: boolean = true;
 }

@@ -1,7 +1,7 @@
 <h1>Hello {{title}}</h1>
 <nav>
-    <div (focus)="showView =true;showCreate=false" [ngClass]="{'active-div': showView}" tabindex="0">View</div>
     <div (focus)="showCreate =true;showView=false" [ngClass]="{'active-div': showCreate}" tabindex="0">Create</div>
+    <div (focus)="showView =true;showCreate=false" [ngClass]="{'active-div': showView}" tabindex="0">View</div>
 </nav>
 <app-profile *ngIf="showView"></app-profile>
 <app-input *ngIf="showCreate"></app-input>

@@ -1,25 +1,25 @@
 <div class="profile-input">
     <h2>Create new profile</h2>
-    <form>
+    <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
         <div class="input-name">
-            <input type="text" placeholder="Enter Your Name">
+            <input type="text" [(ngModel)]="name" name="name" placeholder="Enter Your Name" required>
+            <div class="msg-error" *ngIf="nameError">
+                {{nameError}}
+            </div>
         </div>
         <div class="input-skills">
-            <div class="skill">
-                <input type="checkbox" name="skills" id="python">
-                <label for="python">Python</label>
-            </div>
-            <div class="skill">
-                <input type="checkbox" name="skills" id="java">
-                <label for="java">Java</label>
-            </div>
-            <div class="skill">
-                <input type="checkbox" name="skills" id="javascript">
-                <label for="javascript">Javascript</label>
+            <div><strong>skills</strong></div>
+            <div class="skill" *ngFor="let item of allSkills">
+                <label>
+                    <input type="checkbox" [value]="item" (change)="onCheckboxChange(item)"
+                        [checked]="skills.includes(item)" />
+                    {{ item }}
+                </label>
             </div>
         </div>
+        <div *ngIf="skillsError" class="msg-error">{{skillsError}}</div>
         <div class="submit-btn">
-            <input type="button" (click)="createProfile()" value="Create">
+            <button class="btn" type="submit">Create</button>
         </div>
     </form>
 </div>

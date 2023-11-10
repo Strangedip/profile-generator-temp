@@ -1,19 +1,5 @@
 import { Component } from '@angular/core';
-
-class Profile {
-  static profileList: Profile[] = [
-    new Profile('Ayush', ['python', 'javascript', 'java']),
-    new Profile('Sandip', ['python', 'javascript']),
-    new Profile('Strangedip', ['python', 'javascript','flask','java'])
-  ];
-  name:String;
-  skills:String[];
-  constructor(name: String, skills: String[]) {
-    this.name=name;
-    this.skills=skills;
-  }
-
-}
+import { ServiceComponent, Profile } from '../service/service.component';
 
 @Component({
   selector: 'app-profile',
@@ -21,5 +7,10 @@ class Profile {
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent {
-  profiles = Profile.profileList;
+  profileList: Profile[];
+  service: ServiceComponent;
+  constructor(service: ServiceComponent) {
+    this.service = service;
+    this.profileList = service.profileList;
+  }
 }

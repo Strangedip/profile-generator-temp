@@ -13,19 +13,19 @@
 
 form {
     background-color: #fff;
-    max-width: 20rem;
-    padding: 2rem;
+    width: 20rem;
+    padding: 2rem 1.5rem;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .input-name {
-    padding: 0.5rem 0;
+    padding: 0.5rem;
 }
 
 .input-name>input {
@@ -33,6 +33,14 @@ form {
     height: 2.5rem;
     padding: 0.5rem;
     font-size: 1rem;
+}
+
+.msg-error{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 0.8rem;
+    color: red;
 }
 
 .input-skills>.skill {
@@ -56,7 +64,7 @@ form {
     justify-content: center;
 }
 
-.submit-btn>input {
+.submit-btn>.btn {
     width: 8rem;
     height: 2.5rem;
     background-color: #007bff;
@@ -67,6 +75,6 @@ form {
     cursor: pointer;
 }
 
-.submit-btn>input:hover {
+.submit-btn>.btn:hover {
     background-color: #016fe6;
 }
