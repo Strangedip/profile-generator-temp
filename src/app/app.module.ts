@@ -8,13 +8,15 @@ import { ProfileComponent } from './profile/profile.component';
 import { ServiceComponent } from './service/service.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { SuccessPopupComponent } from './success-popup/success-popup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InputComponent,
     ProfileComponent,
-    ServiceComponent
+    ServiceComponent,
+    SuccessPopupComponent
   ],
   imports: [
     BrowserModule,

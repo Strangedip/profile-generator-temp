@@ -45,12 +45,25 @@ export class InputComponent {
     this.skillsError = '';
 
     this.addProfile(this.name, this.skills);
-    console.log('Form submitted', form.value);
+    this.showSuccessPopup();
+    console.log('created', form.value);
   }
 
   addProfile(name: String, skills: String[]) {
     this.service.addProfile(new Profile(name, skills));
   }
+
+  successMessage: string = 'Profile created successfully!';
+  isPopupOpen: boolean = false;
+
+  showSuccessPopup() {
+    this.isPopupOpen = true;
+  }
+
+  closeSuccessPopup() {
+    this.isPopupOpen = false;
+  }
 }
+
 
 

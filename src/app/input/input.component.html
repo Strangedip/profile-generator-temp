@@ -1,4 +1,8 @@
 <div class="profile-input">
+    <div id="popup">
+        <app-success-popup *ngIf="isPopupOpen" [message]="successMessage"
+            (closed)="closeSuccessPopup()"></app-success-popup>
+    </div>
     <h2>Create new profile</h2>
     <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
         <div class="input-name">

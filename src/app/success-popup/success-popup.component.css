@@ -1,0 +1,22 @@
+.success-popup {
+  position: fixed;
+  background-color: #3ba03e; /* Green */
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: pop 1s ease-out;
+}
+
+.success-content {
+  text-align: center;
+}
+
+@keyframes pop {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
