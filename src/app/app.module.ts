@@ -9,6 +9,7 @@ import { ServiceComponent } from './service/service.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { SuccessPopupComponent } from './success-popup/success-popup.component';
+import { TransactionStatusComponent } from './transaction-status/transaction-status.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SuccessPopupComponent } from './success-popup/success-popup.component';
     InputComponent,
     ProfileComponent,
     ServiceComponent,
-    SuccessPopupComponent
+    SuccessPopupComponent,
+    TransactionStatusComponent
   ],
   imports: [
     BrowserModule,

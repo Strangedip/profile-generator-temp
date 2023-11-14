@@ -1,7 +1,9 @@
 <h1>Hello {{title}}</h1>
 <nav>
-    <div (focus)="showCreate =true;showView=false" [ngClass]="{'active-div': showCreate}" tabindex="0">Create</div>
-    <div (focus)="showView =true;showCreate=false" [ngClass]="{'active-div': showView}" tabindex="0">View</div>
+    <div (focus)="showCreate =true;showView=false;showStatus =false" [ngClass]="{'active-div': showCreate}" tabindex="0">Create</div>
+    <div (focus)="showView =true;showCreate=false;showStatus =false" [ngClass]="{'active-div': showView}" tabindex="0">View</div>
+    <div (focus)="showStatus =true;showCreate=false;showView=false" [ngClass]="{'active-div': showStatus}" tabindex="0">Status</div>
 </nav>
 <app-profile *ngIf="showView"></app-profile>
 <app-input *ngIf="showCreate"></app-input>
+<transaction-status *ngIf="showStatus"></transaction-status>

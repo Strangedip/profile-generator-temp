@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projectA';
+  showCreate: boolean = false;
   showView: boolean = false;
-  showCreate: boolean = true;
+  showStatus: boolean = true;
 }
