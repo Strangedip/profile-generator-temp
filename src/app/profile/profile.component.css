@@ -1,6 +1,6 @@
 
 .profile-box {
-    padding: 2rem;
+    padding: 3rem;
     background-color: #e0eefd;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
@@ -28,5 +28,5 @@
 
 .skills>ul>li {
     list-style: none;
-    padding: 10px ;
+    padding: 8px ;
 }

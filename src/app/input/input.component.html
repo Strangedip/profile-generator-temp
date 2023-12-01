@@ -3,8 +3,8 @@
         <app-success-popup *ngIf="isPopupOpen" [message]="successMessage"
             (closed)="closeSuccessPopup()"></app-success-popup>
     </div>
-    <h2>Create new profile</h2>
     <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+        <h2>Create new profile</h2>
         <div class="input-name">
             <input type="text" [(ngModel)]="name" name="name" placeholder="Enter Your Name" required>
             <div class="msg-error" *ngIf="nameError">
@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="input-skills">
-            <div><strong>skills</strong></div>
+            <div><strong id="skill-head">skills</strong></div>
             <div class="skill" *ngFor="let item of allSkills">
                 <label>
                     <input type="checkbox" [value]="item" (change)="onCheckboxChange(item)"

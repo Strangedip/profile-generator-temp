@@ -6,9 +6,8 @@
     align-items: center;
 }
 
-.profile-input>h2 {
+.profile-input>form>h2 {
     text-align: center;
-    padding: 1rem;
 }
 #popup{
     padding: 2rem;
@@ -29,6 +28,9 @@ form {
     flex-direction: column;
     gap: 0.5rem;
 }
+#skill-head{
+    margin-top: 1rem;
+}
 
 .input-name {
     padding: 0.5rem;
@@ -39,6 +41,13 @@ form {
     height: 2.5rem;
     padding: 0.5rem;
     font-size: 1rem;
+    border: none;
+    outline: 0.5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    
+}
+.input-name>input:focus {
+    outline: 1px solid #007bff;
 }
 
 .msg-error{
@@ -49,6 +58,9 @@ form {
     color: red;
 }
 
+.input-skills {
+    padding-top: 1rem;
+}
 .input-skills>.skill {
     padding: 0.25rem;
     display: flex;
